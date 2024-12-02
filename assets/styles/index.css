@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #282C33;
+    --primary: #C778DD;
+    --main-text: #fff;
+    --secondary-text: #ABB2BF;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: "Montserrat", sans-serif;
+}
+
+/* header */
+.header {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 35px;
+}
+
+.header__container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo a {
+    color: var(--main-text);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.links__item {
+    gap: 45px;
+    list-style-type: none;
+}
+
+.links__item span {
+    color: var(--primary);
+}
+
+.links__item a {
+    text-decoration: none;
+    color: var(--secondary-text);
+    font-size: 1.5rem;
+}
+
+/* main */
+.main {
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 100px;
+}
+
+.main__container {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main__heading {
+    max-width: 45%;
+}
+
+.main__heading span {
+    color: var(--primary);
+}
+
+.main__heading h1 {
+    color: var(--main-text);
+    font-size: 3.3rem;
+}
+
+.heading__descr {
+    margin-top: 25px;
+}
+
+.heading__descr p {
+    font-size: 1.2rem;
+    color: var(--secondary-text);
+}
+
+.heading__btn {
+    max-width: 50%;
+    margin-top: 125px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading__btn a {
+    padding: 15px;
+    text-decoration: none;
+    color: var(--main-text);
+    font-size: 1.3rem;
+    border: 1px solid var(--primary);
+    transition: background-color .4s ease-in;
+}
+
+.heading__btn a:hover {
+    background-color: rgba(199, 120, 221, .5);
+}
+
+.main__photo {
+    max-width: 45%;
+}
+
+.main__photo img {
+    max-width: 100%;
+    border: 1px solid var(--secondary-text);
+    opacity: .7;
+}
+
+.quote {
+    margin-top: 75px;
+    margin-left: 75px;
+}
+
+.quote__text {
+    max-width: 87%;
+}
+
+.quote__text blockquote {
+    padding: 15px;
+    font-size: 2rem;
+    color: var(--secondary-text);
+    border: 1px solid var(--secondary-text);
+}
+
+.quote__text blockquote p::before {
+    font-size: 3rem;
+    content: '\201C';
+}
+
+.quote__text blockquote p::after {
+    font-size: 3rem;
+    content: '\201D';
+}
+
+.quote__text figcaption {
+    margin-left: auto;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--secondary-text);
+    border: 1px solid var(--secondary-text);
+    max-width: 11.8%;
+}
