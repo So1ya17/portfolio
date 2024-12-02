@@ -57,6 +57,11 @@ body {
     text-decoration: none;
     color: var(--secondary-text);
     font-size: 1.5rem;
+    transition: color .3s ease-out;
+}
+
+.links__item a:hover {
+    color: var(--main-text);
 }
 
 /* main */
@@ -119,32 +124,36 @@ body {
 
 .main__photo img {
     max-width: 100%;
-    border: 1px solid var(--secondary-text);
+    border-bottom: 1px solid var(--primary);
     opacity: .7;
 }
 
 .quote {
     margin-top: 75px;
-    margin-left: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 67%;
 }
 
 .quote__text {
-    max-width: 87%;
+    max-width: 100%;
 }
 
 .quote__text blockquote {
     padding: 15px;
-    font-size: 2rem;
-    color: var(--secondary-text);
+    font-size: 1.6rem;
+    color: var(--main-text);
     border: 1px solid var(--secondary-text);
 }
 
 .quote__text blockquote p::before {
+    color: var(--secondary-text);
     font-size: 3rem;
     content: '\201C';
 }
 
 .quote__text blockquote p::after {
+    color: var(--secondary-text);
     font-size: 3rem;
     content: '\201D';
 }
@@ -156,5 +165,140 @@ body {
     font-style: italic;
     color: var(--secondary-text);
     border: 1px solid var(--secondary-text);
-    max-width: 11.8%;
+    border-top: 0;
+    max-width: 15%;
+}
+
+/* main2 */
+.projects {
+    margin-top: 150px;
+}
+
+.heading__projects {
+    max-width: 33%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading__projects h2 {
+    font-size: 2.2rem;
+    color: var(--main-text);
+    letter-spacing: 2px;
+}
+
+.heading__projects span {
+    color: var(--primary);
+}
+
+.heading__projects hr {
+    width: 350px;
+    border: none;
+    border: 1px solid var(--primary);
+    opacity: .7;
+}
+
+.projects__container {
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.card__project {
+    max-width: 25%;
+    border: 1px solid var(--secondary-text);
+}
+
+.card__project img {
+    max-width: 100%;
+    border-bottom: 1px solid var(--secondary-text);
+}
+
+.card__project p {
+    padding: 0 0 5px 5px;
+    font-size: 1.2rem;
+    color: var(--secondary-text);
+    border-bottom: 1px solid var(--secondary-text);
+}
+
+.card__about {
+    padding: 10px;
+}
+
+.card__about h2 {
+    color: var(--main-text);
+}
+
+.card__about p {
+    margin-top: 10px;
+    padding: 0;
+    border-bottom: 0;
+}
+
+.card__links {
+    margin-top: 25px;
+    justify-content: space-between;
+}
+
+.card__links a {
+    padding: 5px;
+    text-decoration: none;
+    color: var(--main-text);
+    font-size: 1.1rem;
+    border: 1px solid var(--primary);
+    transition: background-color .4s ease-in;
+}
+
+.card__links a:hover {
+    background-color: rgba(199, 120, 221, .5);
+}
+
+/* main3 */
+.skills {
+    margin-top: 150px;
+}
+.heading__skills {
+    max-width: 30%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading__skills h2 {
+    font-size: 2.2rem;
+    color: var(--main-text);
+    letter-spacing: 2px;
+}
+
+.heading__skills span {
+    color: var(--primary);
+}
+
+.heading__skills hr {
+    width: 350px;
+    border: none;
+    border: 1px solid var(--primary);
+    opacity: .7;
+}
+
+.skills__container {
+    margin-top: 50px;
+    gap: 55px;
+    justify-content: center;
+    max-width: 85%;
+}
+
+.skills__card {
+    max-width: 35%;
+    border: 1px solid var(--secondary-text);
+    text-align: center;
+}
+
+.skills__card h2 {
+    padding: 15px;
+    border-bottom: 1px solid var(--secondary-text);
+    color: var(--main-text);
+    font-size: 1.7rem;
+}
+
+.skills__card p {
+    padding: 15px;
+    font-size: 1.3rem;
+    color: var(--secondary-text);
 }
