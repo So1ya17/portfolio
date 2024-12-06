@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('../fonts/Montserrat-Bold.ttf');
+}
+
+:root {
+    --background-clor: #282C33;
+    --main-text-color: #fff;
+    --secondary-text-color: #ABB2BF;
+    --primary: #C778DD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-clor);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.common_title {
+    font-family: 'MontserratBold', sans-serif;
+    font-size: 36px;
+    color: var(--main-text-color);
+}
+
+.common_title span {
+    color: var(--primary);
+}
+
+/* header */
+.header {
+    padding-bottom: 100px;
+}
+
+.header .container{
+    padding: 35px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'MontserratBold', sans-serif;
+    font-size: 35px;
+    color: var(--main-text-color);
+    user-select: none;
+}
+
+.navigation_menu_items {
+    list-style: none;
+    gap: 50px;
+}
+
+.menu_item {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    font-size: 18px;
+}
+
+.menu_item span {
+    color: var(--primary);
+}
+
+.menu_item:hover {
+    border-bottom: 2px solid var(--secondary-text-color);
+}
+
+/* welcome */
+
+.welcome {
+    padding: 100px 0;
+}
+
+.welcome_info {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome_info_text {
+    max-width: 650px;
+    height: 379px;
+}
+
+.welcome_title {
+    font-family: 'MontserratBold', sans-serif;
+    font-size: 60px;
+    color: var(--main-text-color);
+}
+
+.welcome_title span {
+    color: var(--primary);
+}
+
+.welcome_descr {
+    margin-top: 25px;
+    color: var(--secondary-text-color);
+    font-size: 18px;
+}
+
+.welcome_button {
+    outline: none;
+    border: 1px solid var(--primary);
+    border-radius: 30px;
+    background-color: transparent;
+    padding: 20px 25px;
+    font-size: 18px;
+    color: var(--secondary-text-color);
+    margin-top: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.welcome_image {
+    max-width: 360px;
+    max-height: 360px;
+}
+
+.welcome_image img {
+    max-width: 100%;
+    border-bottom: 1px solid var(--primary);
+}
+
+/* projects */
+.projects {
+    padding: 100px 0;
+}
